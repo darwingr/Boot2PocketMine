@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd" >
+<plist version="1.0">
+<dict>
+	<key>GroupName</key>
+		<string>_pocketmine</string>
+	<key>KeepAlive</key>
+		<dict>
+    	    <key>SuccessfulExit</key>
+    	    <false/>
+    	</dict>
+	<key>Label</key>
+		<string>com.boot2pocketmine.pocketmined</string>
+	<key>ProgramArguments</key>
+		<array>
+			<string>/usr/local/pocketmine/bin/php5/bin/php</string>
+			<string>--php-ini=/usr/local/pocketmine/bin/php5/bin/php.ini</string>
+			<string>/usr/local/pocketmine/PocketMine-MP.phar</string>
+			<string>--user=_pocketmine</string>
+		</array>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>SHELL</key>
+		<string>/bin/bash</string>
+		<key>PATH</key>
+		<string>usr/local/pocketmine/bin/php5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin</string>
+	</dict>
+	<key>RunAtLoad</key>
+		<true/>
+	<key>StandardErrorPath</key>
+		<string>/usr/local/pocketmine/Library/Logs/com.boot2pocketmine.pocketmined.err</string>
+	<key>StandardOutPath</key>
+		<string>/usr/local/pocketmine/Library/Logs/com.boot2pocketmine.pocketmined.out</string>
+	<key>UserName</key>
+		<string>_pocketmine</string>
+	<key>WorkingDirectory</key>
+		<string>/usr/local/pocketmine</string>
+</dict>
+</plist>
